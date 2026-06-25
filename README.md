@@ -1,6 +1,12 @@
-# Team_D
+# Team\_D
+
 # kawai
+
 # okada
-# tojo
+
+# tojo\_
+
 # mishima
+
 # yano
+
