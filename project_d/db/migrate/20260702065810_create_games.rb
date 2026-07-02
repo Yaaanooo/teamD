@@ -1,8 +1,8 @@
-class CreateGameTables < ActiveRecord::Migration[7.1]
+class CreateGames < ActiveRecord::Migration[7.1]
   def change
-    create_table :game_tables do |t|
+    create_table :games do |t|
+      t.references :question, null: false, foreign_key: true
       t.integer :question_number
-      t.integer :question_id
       t.integer :f_correct_answer
       t.integer :f_wrong_answer_1
       t.integer :f_wrong_answer_2
