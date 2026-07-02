@@ -3,8 +3,8 @@ class AdminsController < ApplicationController
   end
 
   def new
-    @new_table = NewTable.new
-    @genre_tables = GenreTable.all
+    @new_table = Question.new
+    @genre_tables = Genre.all
   end
 
   def genre
