@@ -1,0 +1,56 @@
+.genre-box,
+.score-box,
+.comment-box {
+  border: 2px solid black;
+}
+
+.result-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.genre-box {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.score-box {
+    width: 40%;
+    margin: 30px auto;
+}
+
+.comment-box {
+    width: 80%;
+    height: 250px;
+    margin: 30px auto;
+}
+
+.button-area {
+    display: flex;
+    justify-content: center;
+    gap: 80px;          /* ボタン同士の間隔 */
+    margin-top: 30px;
+}
+
+.button-area form {
+    display: inline-block;
+}
+
+.button-area input {
+    width: 160px;
+    height: 55px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.comment-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genre-box,
+.score-box {
+    padding: 20px 0;
+}
