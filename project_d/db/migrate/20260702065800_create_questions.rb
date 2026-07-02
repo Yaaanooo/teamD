@@ -1,8 +1,7 @@
-class CreateNewTables < ActiveRecord::Migration[7.1]
+class CreateQuestions < ActiveRecord::Migration[7.1]
   def change
-    create_table :new_tables do |t|
-      t.integer :question_id
-      t.integer :genre_id
+    create_table :questions do |t|
+      t.references :genre, null: false, foreign_key: true
       t.string :body
       t.string :correct_answer
       t.string :wrong_answer_1

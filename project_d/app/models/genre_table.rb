@@ -1,2 +1,0 @@
-class GenreTable < ApplicationRecord
-end

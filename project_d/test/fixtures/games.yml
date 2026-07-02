@@ -1,8 +1,8 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  question: one
   question_number: 1
-  question_id: 1
   f_correct_answer: 1
   f_wrong_answer_1: 1
   f_wrong_answer_2: 1
@@ -10,8 +10,8 @@ one:
   f_user_answer: 1
 
 two:
+  question: two
   question_number: 1
-  question_id: 1
   f_correct_answer: 1
   f_wrong_answer_1: 1
   f_wrong_answer_2: 1
