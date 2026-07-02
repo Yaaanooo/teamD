@@ -11,6 +11,18 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.1].define(version: 2026_07_02_065810) do
+  create_table "game_tables", force: :cascade do |t|
+    t.integer "question_number"
+    t.integer "question_id"
+    t.integer "f_correct_answer"
+    t.integer "f_wrong_answer_1"
+    t.integer "f_wrong_answer_2"
+    t.integer "f_wrong_answer_3"
+    t.integer "f_user_answer"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "games", force: :cascade do |t|
     t.integer "question_id", null: false
     t.integer "question_number"
@@ -24,8 +36,27 @@ ActiveRecord::Schema[7.1].define(version: 2026_07_02_065810) do
     t.index ["question_id"], name: "index_games_on_question_id"
   end
 
+  create_table "genre_tables", force: :cascade do |t|
+    t.integer "genre_id"
+    t.string "genre_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "genres", force: :cascade do |t|
     t.string "genre_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "new_tables", force: :cascade do |t|
+    t.integer "question_id"
+    t.integer "genre_id"
+    t.string "body"
+    t.string "correct_answer"
+    t.string "wrong_answer_1"
+    t.string "wrong_answer_2"
+    t.string "wrong_answer_3"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
