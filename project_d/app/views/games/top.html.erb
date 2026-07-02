@@ -1,2 +1,39 @@
-<h1>Game#top</h1>
-<p>Find me in app/views/game/top.html.erb</p>
+<%= form_with url: game_quiz_path, method: :get, local: true do %>
+
+    <div style="text-align: center;">
+        <%= radio_button_tag :genre, "英語", true %>
+        <%= label_tag :genre_english, "英語" %>
+
+        <%= radio_button_tag :genre, "数学" %>
+        <%= label_tag :genre_math, "数学" %>
+
+        <%= radio_button_tag :genre, "国語" %>
+        <%= label_tag :genre_japanese, "国語" %>
+
+        <%= radio_button_tag :genre, "理科" %>
+        <%= label_tag :genre_science, "理科" %>
+
+        <%= radio_button_tag :genre, "社会" %>
+        <%= label_tag :genre_social, "社会" %>
+    </div>
+    <div style="text-align: center;">
+        <span>
+            <%= radio_button_tag :question_count, 5, true %>
+            <%= label_tag :question_count_5, "5問" %>
+        </span>
+
+        <span style="margin-left:20px;">
+            <%= radio_button_tag :question_count, 10 %>
+            <%= label_tag :question_count_10, "10問" %>
+        </span>
+
+        <span style="margin-left:20px;">
+            <%= radio_button_tag :question_count, 20 %>
+            <%= label_tag :question_count_20, "20問" %>
+        </span>
+    </div>
+<br><br>
+<div style="text-align: center;">
+  <%= submit_tag "スタート" %>
+</div>
+<% end %>

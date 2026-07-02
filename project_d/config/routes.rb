@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'admins/new'
   get 'admins/genre'
   root 'games#top'
-  get 'games/quiz'
+  get "games/quiz", to: "games#quiz", as: :game_quiz
   get 'games/result'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
