@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   get 'admins/list'
   get 'admins/new'
-  get 'admins/genre'
+# TOPとジャンル
+  get  "admins/genre", to: "admins#genre"
+  patch "admins/genre", to: "admins#update_genre"
+
   root 'games#top'
   get "games/quiz", to: "games#quiz", as: :game_quiz
   get 'games/result'
