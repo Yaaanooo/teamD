@@ -1,4 +1,4 @@
-/* ジャンルエリア */
+/* ジャンル */
 .genre-area {
     margin-bottom: 20px;
 }
@@ -39,7 +39,7 @@
     margin-bottom: 20px;
 }
 
-/* 選択肢共通の枠 */
+/* 選択肢枠 */
 .choice-field {
     border: 1px solid #ccc;
     padding: 15px;
@@ -56,7 +56,7 @@
     box-sizing: border-box;
 }
 
-/* 正解の枠だけ緑色にする */
+/* 正解の枠 */
 .correct-field {
     border: 2px solid #2ecc71;
 }
@@ -64,7 +64,7 @@
     color: #2ecc71;
 }
 
-/* ボタン関係 */
+/* ボタン */
 .buttons-area {
     display: flex;
     justify-content: space-between;
