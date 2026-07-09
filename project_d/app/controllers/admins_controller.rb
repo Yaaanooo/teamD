@@ -3,6 +3,8 @@ class AdminsController < ApplicationController
   end
 
   def new
+    @new_table = Question.new
+    @genre_tables = Genre.all
   end
 
 # TOP画面とジャンル関連
