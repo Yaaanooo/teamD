@@ -42,12 +42,6 @@
 }
 
 /* 選択肢枠 */
-.choice-field {
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 5px;
-    background: #f9f9f9;
-}
 .choice-label {
     font-weight: bold;
     margin-bottom: 5px;
