@@ -7,7 +7,7 @@
 
   <div class="question-area">
         <h2 class="question-title">問題文</h2>
-        <%= f.text_area :body, placeholder: "ここに問題文を入力してください", class: "question-input" %>
+        <%= f.text_area :body, placeholder: "問題文を入力", class: "question-input" %>
   </div>
 
   <div class="choices-container">
@@ -19,17 +19,17 @@
 
     <div class="choice-field">
         <div class="choice-label">選択肢</div>
-        <%= f.text_field :wrong_answer_1, placeholder: "誤答1を入力", class: "choice-input" %>
+        <%= f.text_field :wrong_answer_1, placeholder: "誤答を入力", class: "choice-input" %>
     </div>
 
     <div class="choice-field">
         <div class="choice-label">選択肢</div>
-        <%= f.text_field :wrong_answer_2, placeholder: "誤答2を入力", class: "choice-input" %>
+        <%= f.text_field :wrong_answer_2, placeholder: "誤答を入力", class: "choice-input" %>
     </div>
 
     <div class="choice-field">
         <div class="choice-label">選択肢</div>
-        <%= f.text_field :wrong_answer_3, placeholder: "誤答3を入力", class: "choice-input" %>
+        <%= f.text_field :wrong_answer_3, placeholder: "誤答を入力", class: "choice-input" %>
     </div>
 
   </div>
