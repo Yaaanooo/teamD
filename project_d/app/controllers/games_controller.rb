@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
   def top
-    @genres = GenreTable.all
+    @genres = Genre.all
   end
 
   def quiz

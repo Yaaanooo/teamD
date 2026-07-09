@@ -9,10 +9,10 @@ class AdminsController < ApplicationController
 
 # TOP画面とジャンル関連
   def genre
-    @genres = GenreTable.all
+    @genres = Genre.all
   end
   def update_genre
-    @genre = GenreTable.first || GenreTable.new
+    @genre = Genre.first || Genre.new
     if @genre.update(genre_params)
       redirect_to game_top_path
     else
