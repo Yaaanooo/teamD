@@ -49,9 +49,12 @@
     display: inline-block;
 }
 
-.button-area input {
-    width: 160px;
-    height: 55px;
-    font-size: 20px;
+.button-area input,
+.button-area button {
+    width: 220px;
+    height: 70px;
+    font-size: 24px;
     cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
 }
