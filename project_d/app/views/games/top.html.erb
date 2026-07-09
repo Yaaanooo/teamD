@@ -1,21 +1,17 @@
 <%= form_with url: game_quiz_path, method: :get, local: true do %>
 
-    <div style="text-align: center;">
-        <%= radio_button_tag :genre, "英語", true %>
-        <%= label_tag :genre_english, "英語" %>
+    <% if @genre.present? %>
+        <div style="text-align: center;">
+            <% @genres.each do |genre| %>
+                <%= radio_button_tag :genre, genre.genre_id %>
+                <%= genre.genre_name %><br>
+            <% end %>
+        </div>
+    <% else %>
 
-        <%= radio_button_tag :genre, "数学" %>
-        <%= label_tag :genre_math, "数学" %>
+        <p>ジャンルが登録されていません。</p>
 
-        <%= radio_button_tag :genre, "国語" %>
-        <%= label_tag :genre_japanese, "国語" %>
-
-        <%= radio_button_tag :genre, "理科" %>
-        <%= label_tag :genre_science, "理科" %>
-
-        <%= radio_button_tag :genre, "社会" %>
-        <%= label_tag :genre_social, "社会" %>
-    </div>
+    <% end %>
     <div style="text-align: center;">
         <span>
             <%= radio_button_tag :question_count, 5, true %>
