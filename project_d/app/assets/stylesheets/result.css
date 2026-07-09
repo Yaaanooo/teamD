@@ -50,8 +50,10 @@
 }
 
 .button-area input {
-    width: 160px;
-    height: 55px;
-    font-size: 20px;
+    width: 220px;
+    height: 70px;
+    font-size: 24px;
     cursor: pointer;
+    font-weight: bold;  /*　文字を太く　*/
+    border-radius: 8px; /* 角を少し丸く　*/
 }
